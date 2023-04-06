@@ -53,10 +53,6 @@ def main():
     login = False
     sApi = sqlApi()
 
-    sApi.setAuthentication()
-    sApi.createConnection()
-    cursor = sApi.connection.cursor()
-
     while True:
         selection = mainMenu()
 
@@ -78,6 +74,7 @@ def main():
             case 2:
                 if not login:
                     print('Error: Please login first before running a query!\n')
+                    continue
                 '''
                 Search Business
                 1. This function allows the user to search for businesses that satisfy certain criteria.
@@ -145,6 +142,7 @@ def main():
             case 3:
                 if not login:
                     print('Error: Please login first before running a query!\n')
+                    continue
                 '''
                 Search Users
                 5. This function allows the user to search for users that satisfy certain criteria.
@@ -212,6 +210,7 @@ def main():
             case 4:
                 if not login:
                     print('Error: Please login first before running a query!\n')
+                    continue
                 '''Make Friend
                 1. A user must be able to select another user from the results of the function Search Users and
                 create a friendship. This can be done by entering the user's ID in a terminal or by clicking
@@ -251,6 +250,7 @@ def main():
             case 5:
                 if not login:
                     print('Error: Please login first before running a query!\n')
+                    continue
                 '''
                 Write Review
                 1. A user should be able to write a review of a business.
