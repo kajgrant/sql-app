@@ -7,7 +7,7 @@ This is a simple sql app that can connect to a database and make basic queries
 To run the app, generate an executable with the following command:
 
 ```
-pyinstaller -F src/main.py
+$ pyinstaller -F src/main.py
 ```
 
 Alternatively, naviagte the the /src/ directory and execute the following command:
