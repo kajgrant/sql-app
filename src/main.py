@@ -19,7 +19,7 @@ USER_YELP_COLUMNS = ('user_id', 'name', 'review_count', 'yelping_since',
 # Function to display the main menu terminal gui
 def mainMenu():
 
-    print("\nWelcome to the SQL navigator! Please select and option below:")
+    print("\nWelcome to the SQL navigator! Please select an option below:")
     print("---------------------------------------------------\n")
     print("1: Login")
     print("2: Search Business")
