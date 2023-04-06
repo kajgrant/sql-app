@@ -4,7 +4,12 @@ This is a simple sql app that can connect to a database and make basic queries
 
 ## Running the app
 
-To run the app, navigate to the dist directory and run the main.exe executable
+To run the app, generate an executable with the following command:
+
+```
+pyinstaller -F src/main.py
+```
+
 Alternatively, naviagte the the /src/ directory and execute the following command:
 
 ```
