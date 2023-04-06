@@ -164,17 +164,20 @@ def main():
                 if nameArg != "":
                     queryArgs["name"] = nameArg
 
-                print("Filter by useful (yes/no)? (Leave blank for no useful filter): ")
+                print(
+                    "Filter by useful (yes/no)? (Leave blank for no useful filter): ", end='')
                 usefulArg = getYesNoInp()
                 if usefulArg != "":
                     queryArgs["useful"] = usefulArg
 
-                print("Filter by funny (yes/no)? (Leave blank for no funny filter): ")
+                print(
+                    "Filter by funny (yes/no)? (Leave blank for no funny filter): ", end='')
                 funnyArg = getYesNoInp()
                 if funnyArg != "":
                     queryArgs["funny"] = funnyArg
 
-                print("Filter by cool (yes/no)? (Leave blank for no cool filter): ")
+                print(
+                    "Filter by cool (yes/no)? (Leave blank for no cool filter): ", end='')
                 coolArg = getYesNoInp()
                 if coolArg != "":
                     queryArgs["cool"] = coolArg
